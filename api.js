@@ -1,1 +1,1 @@
-alert($('#name').value());
+alert($("#name"));
