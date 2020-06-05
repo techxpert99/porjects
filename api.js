@@ -1,3 +1,1 @@
-$('#name').change(function(){
-    alert($('#name').value());
-});
+$('#name').value("meow")
