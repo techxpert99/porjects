@@ -1,1 +1,1 @@
-alert($("#name"));
+alert("Hello!")
