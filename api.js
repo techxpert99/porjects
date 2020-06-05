@@ -5,7 +5,7 @@ $('#name').on("input",function(){
     var num = 0
     var pow = 1
     for(char in val){
-        alert(char)
+        alert(char);
     }
 
     $('#num').html($('#name').val());
