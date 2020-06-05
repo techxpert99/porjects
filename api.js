@@ -1,1 +1,1 @@
-setTimeout(1000,function(){alert($('#name').val()));
+setTimeout(1000,function(){alert($('#name').val())});
