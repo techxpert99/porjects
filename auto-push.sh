@@ -1,2 +1,3 @@
-output=$(git status)
-echo $output
+status=$(git status)
+status="${status,,}"
+echo $status
