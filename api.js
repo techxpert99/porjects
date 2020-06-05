@@ -1,3 +1,3 @@
-$('name').change(function(){
+$('#name').change(function(){
     alert('Hello');
 });
