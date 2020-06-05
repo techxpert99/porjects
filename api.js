@@ -1,3 +1,3 @@
-setTimeout(function(){
-    alert($('#name').val(),10000);
+$('#name').change(function(){
+    alert('Meow');
 });
