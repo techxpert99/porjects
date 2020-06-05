@@ -2,7 +2,7 @@ from subprocess import Popen as popen,PIPE,STDOUT
 from time import sleep
 from re import split
 SAVE_FILE = "autopush.py"
-COMMIT_NUMBER = int("0000011")
+COMMIT_NUMBER = int("0000013")
 RUNNABLE = True
 SLEEP_TIME = 20
 
@@ -44,7 +44,6 @@ def save(file):
                 line = ""
                 for split in line_splits:
                     line += split
-                print(line)
                 fil.write(line)
                 break
             line = fil.readline()
