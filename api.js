@@ -9,7 +9,7 @@ $('#name').on("input",function(){
         num += pow*Number(val[index]);
         pow*=10;
     }
-    $('#num').html(num);
+    $('#num').html(toString(num));
 })
 
 });
