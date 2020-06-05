@@ -1,2 +1,2 @@
-$(document).sleep();
+setTimeout(10);
 alert($('#name').val())
