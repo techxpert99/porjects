@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-$('#name').change(function(){
+$('#name').on("input",function(){
     alert('Hello');
 })
 
