@@ -1,1 +1,3 @@
-$(document).
+$(document).ready(function () {
+    alert('Meow');
+});
