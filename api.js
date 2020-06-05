@@ -9,7 +9,8 @@ $('#name').on("input",function(){
         num += pow*val.charCodeAt(index);
         pow*=10;
     }
-    $('#num').html(toString(num));
+    alert(num)
+    $('#num').html('');
 })
 
 });
