@@ -1,3 +1,3 @@
-$('#name').change(function(){
+$('#name').onchange(function(){
     alert('Meow');
 });
