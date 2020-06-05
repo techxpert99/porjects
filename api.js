@@ -1,1 +1,1 @@
-$('#name').value("meow");
+alert($('#name').val())
