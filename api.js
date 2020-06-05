@@ -1,4 +1,4 @@
 $(document).ready(function () {
     alert('Meow');
-    window.console && console.log('Meow')
+    window.console && console.log('Meow');
 });
