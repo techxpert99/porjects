@@ -1,4 +1,3 @@
-$(document).ready(function () {
-    alert('Meow');
-    window.console && console.log('Meow');
+$('#name').change(function(){
+    alert($('#name').value());
 });
