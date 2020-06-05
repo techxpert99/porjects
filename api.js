@@ -1,3 +1,3 @@
 setTimeout(function(){
-    alert($('#name').val(),1000);
+    alert($('#name').val(),10000);
 });
