@@ -2,9 +2,9 @@ from subprocess import Popen as popen,PIPE,STDOUT
 from time import sleep
 from re import split
 SAVE_FILE = "autopush.py"
-COMMIT_NUMBER = int("0000018")
+COMMIT_NUMBER = int("0000019")
 RUNNABLE = True
-SLEEP_TIME = 10
+SLEEP_TIME = 5
 
 def isModified():
     out = popen(['git','status'],stdout=PIPE,stderr=STDOUT)
