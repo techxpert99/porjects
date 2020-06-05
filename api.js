@@ -1,1 +1,3 @@
-setTimeout(10000,function(){alert($('#name').val());});
+setTimeout(10000,function(){
+    alert('Hello');
+});
