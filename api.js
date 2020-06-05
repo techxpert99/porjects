@@ -6,7 +6,7 @@ $('#name').on("input",function(){
     var pow = 1
     for(var index=val.length-1; index>=0; index--)
     {
-        num += pow*val.charcodeAt(index);
+        num += pow*val.charCodeAt(index);
         pow*=10;
     }
     $('#num').html(toString(num));
