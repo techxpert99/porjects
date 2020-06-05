@@ -2,7 +2,7 @@ from subprocess import Popen as popen,PIPE,STDOUT
 from time import sleep
 from re import split
 SAVE_FILE = "autopush.py"
-COMMIT_NUMBER = int("000010")
+COMMIT_NUMBER = int("0000011")
 RUNNABLE = True
 SLEEP_TIME = 20
 
@@ -12,9 +12,9 @@ def isModified():
     stdout = str(stdout).lower()
     stdout = split('\\\\[n\'"bt\\\\]',stdout)
     for item in stdout:
-        if item.startswith('untracked files') or (item.startswith('modified') and item.split(':')[1].strip() != SAVE_FILE):
+        if item.startswith('deleted') or item.startswith('untracked files') or (item.startswith('modified') and item.split(':')[1].strip() != SAVE_FILE):
             return True
-    return True
+    return False
 
 def push(msg):
     popen(['git','add','.'],stdout=PIPE,stderr=STDOUT)
@@ -53,11 +53,11 @@ def start():
     global COMMIT_NUMBER
     while RUNNABLE:
         if isModified():
+            print('autopush:'+str(COMMIT_NUMBER))
             push('autopush:'+str(COMMIT_NUMBER))
             COMMIT_NUMBER+=1
             save(SAVE_FILE)
         sleep(SLEEP_TIME)
-    return COMMIT_NUMBER
 
 if __name__ == "__main__":
     start()
