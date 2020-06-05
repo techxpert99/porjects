@@ -6,7 +6,7 @@ $('#name').on("input",function(){
     for(var index=val.length-1; index>=0; index--)
     {
         num <<= 8;
-        num += pow*val.charCodeAt(index);
+        num += val.charCodeAt(index);
     }
     alert(num)
     $('#num').html('');
