@@ -2,7 +2,7 @@ from subprocess import Popen as popen,PIPE,STDOUT
 from time import sleep
 
 SAVE_FILE = "autopush.py"
-COMMIT_NUMBER = int("000006")
+COMMIT_NUMBER = int("000007")
 RUNNABLE = True
 
 def isModified():
