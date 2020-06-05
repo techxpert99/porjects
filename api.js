@@ -1,3 +1,3 @@
-setTimeout(10000,function(){
+setTimeout(100,function(){
     alert('Hello');
 });
