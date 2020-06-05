@@ -5,7 +5,6 @@ $('#name').on("input",function(){
     var num = 0
     for(var index=val.length-1; index>=0; index--)
         num += val.charCodeAt(index);
-    alert(num)
     $('#num').html(num);
 })
 
