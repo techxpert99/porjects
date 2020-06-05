@@ -1,15 +1,20 @@
 from subprocess import Popen as popen,PIPE,STDOUT
 from time import sleep
-
+from re import split
 SAVE_FILE = "autopush.py"
-COMMIT_NUMBER = int("000008")
+COMMIT_NUMBER = int("000010")
 RUNNABLE = True
+SLEEP_TIME = 20
 
 def isModified():
     out = popen(['git','status'],stdout=PIPE,stderr=STDOUT)
     stdout,_ = out.communicate()
     stdout = str(stdout).lower()
-    return not 'nothing to commit' in stdout
+    stdout = split('\\\\[n\'"bt\\\\]',stdout)
+    for item in stdout:
+        if item.startswith('untracked files') or (item.startswith('modified') and item.split(':')[1].strip() != SAVE_FILE):
+            return True
+    return True
 
 def push(msg):
     popen(['git','add','.'],stdout=PIPE,stderr=STDOUT)
@@ -51,7 +56,7 @@ def start():
             push('autopush:'+str(COMMIT_NUMBER))
             COMMIT_NUMBER+=1
             save(SAVE_FILE)
-        sleep(10)
+        sleep(SLEEP_TIME)
     return COMMIT_NUMBER
 
 if __name__ == "__main__":
