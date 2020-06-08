@@ -1,10 +1,9 @@
-(function()
-{
+(function() {
     'use strict';
-    
-    angular.module('myFirstApp',[])
 
-    .controller('MyFirstController',function(){
+    angular.module('NameCalculator', [])
+
+    .controller('NameCalculatorController', function() {
 
     });
 })();
