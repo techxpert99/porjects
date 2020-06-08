@@ -7,11 +7,16 @@
         $scope.message = "";
         $scope.lunch_menu = "";
         $scope.checkMenu() = function() {
-            $lunch = $scope.lunch_menu.split(',');
-            if ($lunch.length <= 3)
-                $scope.message = "Enjoy!";
-            else
-                $scope.message = "Too Much!";
+            $lunch = $scope.lunch_menu;
+            if ($lunch == 0 || $lunch.length == 0)
+                $cope.message = "Please enter data first";
+            else {
+                $lunch = $lunch.split(',');
+                if ($lunch.length <= 3)
+                    $scope.message = "Enjoy!";
+                else
+                    $scope.message = "Too Much!";
+            }
         };
     }]);
 })();
