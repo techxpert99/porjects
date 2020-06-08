@@ -3,15 +3,10 @@
 
     angular.module('DIApp', [])
 
-    .controller('DIController', ['$scope', function($scope) {
+    .controller('DIController', ['$scope', '$filter', function($scope, $filter) {
         $scope.name = "";
-        $scope.totalValue = 0;
-        $scope.updateNumeric = function() {
-            var totalNameValue = 0;
-            var name = $scope.name;
-            for (var index = 0; index < name.length; index++)
-                totalNameValue += name.charCodeAt(index);
-            $scope.totalValue = totalNameValue;
+        $scope.upper = function() {
+            $scope.name = $scope.name.toUpperCase();
         };
     }]);
 })();
