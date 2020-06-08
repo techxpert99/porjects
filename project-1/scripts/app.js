@@ -16,9 +16,9 @@
                 $scope.color = "green";
                 lunch = lunch.trim().split(',');
                 var count = 0;
-                lunch.forEach(function(data) {
-                    console.log(data);
-                    count += 1
+                lunch.forEach(function(item) {
+                    if (item != 0 && item.trim() != 0 && item.trim().length != 0)
+                        count += 1
                 });
                 if (lunch.length <= 3)
                     $scope.message = "Enjoy!";
