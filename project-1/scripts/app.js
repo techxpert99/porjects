@@ -14,7 +14,7 @@
                 $scope.message = "Please enter data first";
             } else {
                 $scope.color = "green";
-                lunch = lunch.trim().split(',');
+                lunch = lunch.split(',');
                 var count = 0;
                 lunch.forEach(function(item) {
                     console.log("*" + item);
