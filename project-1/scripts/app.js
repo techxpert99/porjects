@@ -9,9 +9,11 @@
         $scope.color = "black";
         $scope.checkLunch = function() {
             var lunch = $scope.lunch_menu;
-            if (lunch == 0 || lunch.length == 0)
+            if (lunch == 0 || lunch.length == 0) {
+                $scope.color = "red";
                 $scope.message = "Please enter data first";
-            else {
+            } else {
+                $scope.color = "green";
                 lunch = lunch.split(',');
                 if (lunch.length <= 3)
                     $scope.message = "Enjoy!";
