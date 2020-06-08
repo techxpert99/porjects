@@ -14,7 +14,7 @@
                 $scope.message = "Please enter data first";
             } else {
                 $scope.color = "green";
-                lunch = lunch.split(',');
+                lunch = lunch.trim().split(',');
                 if (lunch.length <= 3)
                     $scope.message = "Enjoy!";
                 else
