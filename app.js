@@ -3,8 +3,8 @@
 
     angular.module('NameCalculator', [])
 
-    .controller('NameCalculatorController', function() {
+    .controller('NameCalculatorController', ['$scope', function() {
         $scope.name = "Ritik";
         $scope.totalValue = 0;
-    });
+    }]);
 })();
