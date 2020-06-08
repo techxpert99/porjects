@@ -11,6 +11,7 @@
             var name = $scope.name
             for (var index = 0; index < name.length; index++)
                 totalNameValue += name.charCodeAt(index)
+            return totalNameValue;
         });
     }]);
 })();
