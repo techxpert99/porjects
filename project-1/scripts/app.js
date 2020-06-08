@@ -7,12 +7,12 @@
         $scope.message = "";
         $scope.lunch_menu = "";
         $scope.checkLunch = function() {
-            $lunch = $scope.lunch_menu;
-            if ($lunch == 0 || $lunch.length == 0)
-                $cope.message = "Please enter data first";
+            var lunch = $scope.lunch_menu;
+            if (lunch == 0 || lunch.length == 0)
+                $scope.message = "Please enter data first";
             else {
-                $lunch = $lunch.split(',');
-                if ($lunch.length <= 3)
+                lunch = lunch.split(',');
+                if (lunch.length <= 3)
                     $scope.message = "Enjoy!";
                 else
                     $scope.message = "Too Much!";
