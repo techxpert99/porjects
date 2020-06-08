@@ -19,9 +19,9 @@
                 lunch.forEach(function(item) {
                     console.log("*" + item);
                     if (item != 0 && item.trim() != 0 && item.trim().length != 0)
-                        console.log(item);
+                        count += 1;
                 });
-                if (lunch.length <= 3)
+                if (count <= 3)
                     $scope.message = "Enjoy!";
                 else
                     $scope.message = "Too Much!";
