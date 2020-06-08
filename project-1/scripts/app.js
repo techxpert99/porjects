@@ -6,7 +6,7 @@
     .controller('LCCtl', ['$scope', function($scope) {
         $scope.message = "";
         $scope.lunch_menu = "";
-        $scope.color = "#FF00FF";
+        $scope.color = "red";
         $scope.checkLunch = function() {
             var lunch = $scope.lunch_menu;
             if (lunch == 0 || lunch.length == 0)
