@@ -1,13 +1,17 @@
 (function() {
     'use strict';
 
-    angular.module('DIApp', [])
+    angular.module('LunchChecker', [])
 
-    .controller('DIController', ['$scope', '$filter', function($scope, $filter) {
-        $scope.name = "";
-        $scope.upper = function() {
-            var upcase = $filter('uppercase');
-            $scope.name = upcase($scope.name);
+    .controller('LCCtl', ['$scope', function($scope) {
+        $scope.message = "";
+        $scope.lunch_menu = "";
+        $scope.checkMenu() = function() {
+            $lunch = $scope.lunch_menu.split(',');
+            if ($lunch.length <= 3)
+                $scope.message = "Enjoy!";
+            else
+                $scope.message = "Too Much!";
         };
     }]);
 })();
