@@ -6,7 +6,8 @@
     .controller('DIController', ['$scope', '$filter', function($scope, $filter) {
         $scope.name = "";
         $scope.upper = function() {
-            $scope.name = $scope.name.toUpperCase();
+            var upcase = $filter['uppercase'];
+            $scope.name = upcase($scope.name);
         };
     }]);
 })();
