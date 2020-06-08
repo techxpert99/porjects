@@ -17,6 +17,7 @@
                 lunch = lunch.trim().split(',');
                 var count = 0;
                 lunch.forEach(function(item) {
+                    console.log("*" + item);
                     if (item != 0 && item.trim() != 0 && item.trim().length != 0)
                         console.log(item);
                 });
