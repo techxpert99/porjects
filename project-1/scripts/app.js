@@ -18,7 +18,7 @@
                 var count = 0;
                 lunch.forEach(function(item) {
                     if (item != 0 && item.trim() != 0 && item.trim().length != 0)
-                        count += 1;
+                        console.log(item);
                 });
                 if (lunch.length <= 3)
                     $scope.message = "Enjoy!";
