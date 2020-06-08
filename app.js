@@ -9,9 +9,8 @@
         $scope.updateNumeric = function() {
             var totalNameValue = 0;
             var name = $scope.name;
-            for (var index = 0; index < name.length; index++) {
+            for (var index = 0; index < name.length; index++)
                 totalNameValue += name.charCodeAt(index);
-            }
             $scope.totalValue = totalNameValue;
         };
     }]);
