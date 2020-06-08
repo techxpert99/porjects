@@ -1,9 +1,9 @@
 (function() {
     'use strict';
 
-    angular.module('NameCalculator', [])
+    angular.module('DIApp', [])
 
-    .controller('NameCalculatorController', ['$scope', function($scope) {
+    .controller('DIController', ['$scope', function($scope) {
         $scope.name = "";
         $scope.totalValue = 0;
         $scope.updateNumeric = function() {
