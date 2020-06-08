@@ -4,7 +4,7 @@
     angular.module('NameCalculator', [])
 
     .controller('NameCalculatorController', function() {
-        $scope.name = "";
+        $scope.name = "Ritik";
         $scope.totalValue = 0;
     });
 })();
