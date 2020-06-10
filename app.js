@@ -1,13 +1,12 @@
 (function() {
     'use strict';
 
-    angular.module('DIApp', [])
+    angular.module('App', [])
+        .controller('Ctl', Ctl);
 
-    .controller('DIController', ['$scope', '$filter', function($scope, $filter) {
-        $scope.name = "";
-        $scope.upper = function() {
-            var upcase = $filter('uppercase');
-            $scope.name = upcase($scope.name);
-        };
-    }]);
+    Ctl.$inject = ['$scope'];
+
+    function Ctl($scope) {
+
+    }
 })();
