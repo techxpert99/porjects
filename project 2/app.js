@@ -7,6 +7,8 @@
         { name: Chocolate, quantity: 5 }
     ];
 
+    AppCtl.$inject = [];
+
     function AppCtl() {
         this.shoppingList = shoppingList;
     }
