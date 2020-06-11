@@ -13,7 +13,7 @@
         $scope.shoppingList = shoppingList;
         $scope.boughtList = [];
         $scope.buyItem = function(index) {
-            $scope.shoppingList.splice(index, 1);
+            $scope.boughtList.push($scope.shoppingList.splice(index, 1)[0]);
         };
     }
 })();
