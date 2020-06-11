@@ -7,7 +7,9 @@
         { name: 'Chocolate', quantity: 5 }
     ];
 
-    function AppCtl() {
-        this.shoppingList = shoppingList;
+    AppCtl.$inject = ['$scope'];
+
+    function AppCtl($scope) {
+        $scope.shoppingList = shoppingList;
     }
 })();
