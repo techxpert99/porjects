@@ -11,8 +11,9 @@
 
     function AppCtl($scope) {
         $scope.shoppingList = shoppingList;
+        $scope.boughtList = [];
         $scope.buyItem = function(index) {
-            console.log(index);
+            $scope.shoppingList.splice(index, 1);
         };
     }
 })();
