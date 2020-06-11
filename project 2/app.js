@@ -4,7 +4,10 @@
 
     var shoppingList = [
         { name: 'Cookie', quantity: 10 },
-        { name: 'Chocolate', quantity: 5 }
+        { name: 'Chocolate', quantity: 5 },
+        { name: 'Ice Cream', quantity: 7 },
+        { name: 'Dog shit', quantity: 1000 },
+        { name: 'Cat food', quantity: 50 }
     ];
 
     AppCtl.$inject = ['$scope'];
