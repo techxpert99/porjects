@@ -2,7 +2,7 @@ from subprocess import Popen as popen,PIPE,STDOUT
 from time import sleep
 from re import split
 SAVE_FILE = "autopush.py"
-COMMIT_NUMBER = int("0000291")
+COMMIT_NUMBER = int("0000293")
 RUNNABLE = True
 SLEEP_TIME = 5
 
