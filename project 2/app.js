@@ -1,5 +1,5 @@
 (function() {
-    anglular.module('app')
+    angular.module('app')
         .controller('appctl', AppCtl);
 
     var shoppingList = [
