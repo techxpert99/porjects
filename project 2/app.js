@@ -9,5 +9,6 @@
 
     function AppCtl() {
         this.shoppingList = shoppingList;
+        console.log(this.shoppingList.length);
     }
 })();
