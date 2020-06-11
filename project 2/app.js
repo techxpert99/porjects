@@ -10,7 +10,7 @@
     AppCtl.$inject = ['$scope'];
 
     function AppCtl($scope) {
-        this.shoppingList = shoppingList;
+        $scope.shoppingList = shoppingList;
         console.log($scope);
         console.log(this);
     }
