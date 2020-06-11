@@ -1,5 +1,5 @@
 (function() {
-    angular.module('app')
+    angular.module('app', [])
         .controller('appctl', AppCtl);
 
     var shoppingList = [
@@ -7,9 +7,7 @@
         { name: Chocolate, quantity: 5 }
     ];
 
-    AppCtl.$inject = ['$scope'];
-
-    function AppCtl($scope) {
+    function AppCtl() {
         this.shoppingList = shoppingList;
     }
 })();
