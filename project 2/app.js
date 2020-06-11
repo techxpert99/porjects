@@ -11,5 +11,7 @@
 
     function AppCtl($scope) {
         $scope.shoppingList = shoppingList;
+        console.log($scope);
+        console.log(this);
     }
 })();
