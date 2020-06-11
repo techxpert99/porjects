@@ -11,11 +11,8 @@
 
     function AppCtl($scope) {
         $scope.shoppingList = shoppingList;
-        console.log($scope);
-        console.log(this);
+        $scope.buyItem = function(index) {
+            console.log(index);
+        };
     }
-
-    $scope.buyItem = function(index) {
-        console.log(index);
-    };
 })();
